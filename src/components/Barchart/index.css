@@ -1,0 +1,74 @@
+.barchartContainer {
+  width: 835px;
+  margin-bottom: 40px;
+}
+
+.recharts-cartesian-axis-tick-line {
+  display: none;
+}
+
+.barchartLegend {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px ;
+
+}
+
+.barchartLegend  h2 {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 160% */
+
+
+color: #20253A;
+}
+
+ul {
+  display: flex;
+  width: 277px ;
+  justify-content: space-between;
+}
+li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #74798c;
+}
+li span {
+  font-size: 10px;
+  margin-right: 10px;
+}
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+
+.barchartTooltip {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 24px;
+  /* identical to box height, or 343% */
+  background: #e60000;
+  text-align: center;
+  padding: 1px;
+  border-radius: 0px;
+  border: none;
+}
+
+.barchartTooltip p {
+  color: #ffffff;
+  margin: 20px;
+ 
+}

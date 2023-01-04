@@ -1,0 +1,57 @@
+* {
+  font-family: "Roboto";
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+.dashboardContainer {
+  display: flex;
+}
+
+.dashboardContent {
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 100%;
+}
+.dashboardContainer h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 24px;
+  margin: 40px 0px;
+}
+.dashboardContainer p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  color: #000000;
+}
+
+.graphContainer {
+  width: 835px;
+  margin-top: 80px;
+}
+
+.graphList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.keyDataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dataContainer {
+  display: flex;
+
+}
