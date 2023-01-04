@@ -5,9 +5,22 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 
+/**
+ * Component for showing circular progress bar.
+ *
+ * @component
+ * Return the circular progress bar with evolution's pourcentage
+ */
+
 function Piechar({ props }) {
   const [data, setData] = useState(0);
 
+  /**
+   * Component for showing details of the user.
+   *
+   * @hooks useEffect
+   * await the props, convert the number to a pourcentage and push value to data
+   */
   useEffect(() => {
     setData(props * 100);
   }, [props]);

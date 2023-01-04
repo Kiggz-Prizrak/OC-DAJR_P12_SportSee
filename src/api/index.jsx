@@ -1,4 +1,4 @@
-// const getUser = [];
+// user object 
 const getUser = {
   id: null,
   userDatas: null,
@@ -11,6 +11,8 @@ const getUser = {
     data: null,
   },
 };
+
+// fetch data from api 
 
 const fetchData = () => {
   return (
@@ -51,6 +53,7 @@ const fetchPerformance = () => {
 
 }
 
+// Data class 
 class User {
   constructor(datas) {
     this._id = datas.id;

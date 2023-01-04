@@ -1,5 +1,13 @@
 import './index.css';
 
+
+/**
+ * Component for showing the sidebar.
+ *
+ * @component
+ * 
+ */
+
 export default function Sidebar() {
   return (
     <div className='sidebarContainer'>

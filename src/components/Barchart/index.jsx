@@ -14,9 +14,21 @@ import {
   Legend,
 } from "recharts";
 
+/**
+ * Component for showing details of the user.
+ *
+ * @component
+ * Return the barchart which contains information about weight and calories burned
+ */
+
 function Barchart({ props }) {
   const [data, setData] = useState([]);
 
+  /**
+   *
+   * @hooks useEffect
+   * await the props and push value to data
+   */
   useEffect(() => {
     setData(props);
   }, [props]);

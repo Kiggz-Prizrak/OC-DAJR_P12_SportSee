@@ -14,8 +14,22 @@ import {
   Legend,
 } from "recharts";
 
+/**
+ * Component for showing linechart.
+ *
+ * @component
+ * Return the linechart with day in the XAxis and timeout in the YAxis
+ */
 function Linechart({ props }) {
   const [data, setData] = useState([]);
+
+  /**
+   *
+   * @hooks useEffect
+   * await the props 
+   * dispatch the day value to the week's day  and push value to data
+   * 
+   */
   useEffect(() => {
     const list = props;
 
@@ -92,7 +106,6 @@ function Linechart({ props }) {
       </LineChart>
     </div>
   );
-  
 }
 
 Linechart.propTypes = {

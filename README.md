@@ -12,7 +12,7 @@ npm install
 npm run dev
 ```
 
-use the backend's[repository](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard) to start the api.
+use the backend's [repository](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard) to start the api.
 
 ## Technologies
 - JS

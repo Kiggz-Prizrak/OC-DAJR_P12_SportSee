@@ -3,6 +3,13 @@ import './index.css'
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
+/**
+ * Component for showing icons and values.
+ *
+ * @component
+ * 
+ */
+
 function DataItem(props) {
 
     // console.log(props)

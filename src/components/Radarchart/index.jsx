@@ -5,9 +5,22 @@ import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis } from "recharts";
 
+/**
+ * Component for showing radarchart.
+ *
+ * @component
+ * Return the radarchart with data assigned
+ */
+
 function Radarchart({ props }) {
   const [data, setData] = useState([]);
 
+  /**
+   * Component for showing details of the user.
+   *
+   * @hooks useEffect
+   * await the props and  and assign value to kind property, then, push value to data
+   */
   useEffect(() => {
     console.log(props);
     props?.data.map((e, i) => {

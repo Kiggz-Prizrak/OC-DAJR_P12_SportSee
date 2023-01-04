@@ -1,5 +1,12 @@
 import "./index.css";
 
+
+/**
+ * Component for showing header.
+ *
+ * @component
+ */
+
 const Header = () => {
   return (
     <div className="headerContainer">
