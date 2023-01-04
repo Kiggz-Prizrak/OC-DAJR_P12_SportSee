@@ -12,18 +12,26 @@ import Barchart from "../components/Barchart";
 import DataItem from "../components/DataItem";
 
 
+/**
+ * page for showing the dashboard.
+ *
+ * @page
+ */
 
 export default function Dashboard() {
   const [data, setData] = useState({});
 
+  /**
+   * await the userData class from the api to bring him to the state
+   *
+   * @hooks
+   */
   useEffect(() => {
+    // console.log(UserData);
+    setData(UserData);
+  }, []);
 
-      // console.log(UserData);
-      setData(UserData);
-    
-  },[] );
-
- //console.log(data._keyData);
+  //console.log(data._keyData);
   return (
     <div className="dashboardContainer">
       <Sidebar />
