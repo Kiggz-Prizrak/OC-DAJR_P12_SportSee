@@ -111,7 +111,7 @@ function Linechart({ props }) {
 Linechart.propTypes = {
   props: PropTypes.arrayOf(
     PropTypes.shape({
-      day: PropTypes.number,
+  
       sessionLength: PropTypes.number,
     })
   ),

@@ -16,40 +16,44 @@ const getUser = {
 
 const fetchData = () => {
   return (
-    fetch("http://127.0.0.1:5173/userDatas.json")
-      .then((response) => response.json())
+    fetch("http://localhost:3000/user/18")
+      .then((res) => res.json())
       //.then((data) => getUser.push(data));
-      .then((data) => {
-        getUser.id = data.id;
-        getUser.userDatas = data.userInfos;
-        getUser.todayScore = data.todayScore;
-        getUser.userName = data.userName;
-        getUser.keyData = data.keyData;
+      .then((res) => {
+        console.log(res);
+        getUser.id = res.data.id;
+        getUser.userDatas = res.data.userInfos;
+        getUser.todayScore = res.data.todayScore || res.data.score;
+        getUser.userName = res.data.userName;
+        getUser.keyData = res.data.keyData;
       })
   );
 };
 const fetchActivity = () => {
-  return fetch("http://127.0.0.1:5173/activity.json")
+  return fetch("http://localhost:3000/user/18/activity")
     .then((res) => res.json())
     .then((res) => {
+      console.log(res)
       getUser.activity = res.data.sessions;
-      
     });
 };
 const fetchAverageSessions = () => {
-  return fetch("http://127.0.0.1:5173/averageSessions.json")
-  .then((res) => res.json())
-  .then((res) => {
-    getUser.averageSessions = res.data.sessions
-  }) 
+  return fetch("http://localhost:3000/user/18/average-sessions")
+    .then((res) => res.json())
+    .then((res) => {
+      
+      console.log(res);
+      getUser.averageSessions = res.data.sessions;
+    }); 
 }
 const fetchPerformance = () => {
-  return fetch("http://127.0.0.1:5173/performance.json")
-  .then((res) => res.json())
-  .then((res) => {
-    getUser.performance.kind = res.data.kind;
-    getUser.performance.data = res.data.data;
-  }) 
+  return fetch("http://localhost:3000/user/18/performance")
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+      getUser.performance.kind = res.data.kind;
+      getUser.performance.data = res.data.data;
+    }); 
 
 }
 

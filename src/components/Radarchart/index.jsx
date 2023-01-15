@@ -22,7 +22,6 @@ function Radarchart({ props }) {
    * await the props and  and assign value to kind property, then, push value to data
    */
   useEffect(() => {
-    console.log(props);
     props?.data.map((e, i) => {
       const count = i + 1;
       e.kind = props?.kind[count];
@@ -31,10 +30,6 @@ function Radarchart({ props }) {
   }, [props]);
 
   // console.log(data);
-
-  function customTick({ payload, x, y, textAnchor, stroke, radius }) {
-    console.log(payload, x, y, textAnchor, stroke);
-  }
 
   return (
     <div className="radarchartContainer">
